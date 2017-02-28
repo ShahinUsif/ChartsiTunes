@@ -23,9 +23,9 @@ public class GalleryActivity extends BaseDrawerActivity implements SwipeRefreshL
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
     ImagesRecyclerAdapter adapter;
-    ArrayList<ImImage> imagesList;
-    private SwipeRefreshLayout swipeContainer;
+    SwipeRefreshLayout swipeContainer;
 
+    ArrayList<ImImage> imagesList;
     Bundle extras;
 
     @Override
