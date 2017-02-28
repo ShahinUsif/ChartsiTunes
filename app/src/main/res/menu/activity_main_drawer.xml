@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Applications">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_free_apps"
+                        android:icon="@drawable/ic_store"
+                        android:title="Top Free Apps" />
+                    <item
+                        android:id="@+id/nav_paid_apps"
+                        android:icon="@drawable/ic_store"
+                        android:title="Top Paid Apps" />
+
+                    <item
+                        android:id="@+id/nav_free_ipad_apps"
+                        android:icon="@drawable/ic_store"
+                        android:title="Top Free iPad Apps" />
+
+                    <item
+                        android:id="@+id/nav_paid_ipad_apps"
+                        android:icon="@drawable/ic_store"
+                        android:title="Top Paid iPad Apps" />
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_free_books"
+            android:icon="@drawable/ic_books"
+            android:title="Top Free Books" />
+
+        <item android:title="More">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_about"
+                        android:icon="@android:drawable/ic_dialog_info"
+                        android:title="About" />
+                </group>
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

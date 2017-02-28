@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/drawee_overlay"
+        android:elevation="5dip"
+        android:padding="@dimen/nav_header_vertical_spacing">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/font_title"
+            android:layout_toLeftOf="@+id/tb_layout"/>
+
+        <ToggleButton
+            android:id="@+id/tb_layout"
+            style="@style/toggleButton"
+            android:layout_width="@dimen/toggle_size"
+            android:layout_height="@dimen/toggle_size"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_toggle_bg" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dip">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/image_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
